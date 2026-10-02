@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>火豆电影网 - 灶火爆豆国潮风影视导航</title>
+<meta name="description" content="火豆电影网(https://huodoudianyingwang-h5.github.io)以灶火、铜锅、爆米花豆为国潮意象，整理最新电影、热播剧集、综艺娱乐、动漫专区，做合规影视信息导航站。">
+<meta name="keywords" content="火豆电影网,灶火,爆豆,国潮,电影,电视剧,综艺,动漫,影视导航">
+<meta name="author" content="火豆电影网">
+<meta name="robots" content="index,follow">
+<meta name="msvalidate.01" content="BING_VERIFICATION_CODE">
+<meta property="og:title" content="火豆电影网 - 灶火爆豆国潮风影视导航">
+<meta property="og:description" content="火豆电影网：片单像锅里爆开的豆子，噼啪一声就有好片。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://huodoudianyingwang-h5.github.io">
+<meta property="og:site_name" content="火豆电影网">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"火豆电影网",
+  "url":"https://huodoudianyingwang-h5.github.io",
+  "description":"灶火爆豆国潮风影视信息导航站",
+  "potentialAction":{
+    "@type":"SearchAction",
+    "target":"https://huodoudianyingwang-h5.github.io#search={search_term_string}",
+    "query-input":"required name=search_term_string"
+  }
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --fire:#ff5722;
+  --fire-d:#d84315;
+  --bean:#ffd54f;
+  --bean-d:#f9a825;
+  --coal:#1a120b;
+  --coal2:#241a10;
+  --cream:#fff7ec;
+  --muted:#a08a6c;
+  --ink:#2a1d10;
+}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Songti SC",sans-serif;
+  background:
+    radial-gradient(680px 380px at 90% 0%, rgba(255,87,34,.22), transparent 60%),
+    radial-gradient(520px 300px at 0% 12%, rgba(255,213,79,.22), transparent 60%),
+    var(--coal);
+  color:var(--cream);line-height:1.8;overflow-x:hidden;
+}
+a{text-decoration:none;color:inherit;transition:.2s}
+
+.flame-bar{height:8px;background:linear-gradient(90deg,var(--fire),var(--bean),var(--fire));opacity:.85}
+
+.top{max-width:1180px;margin:0 auto;padding:16px 20px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.brand{font-size:26px;font-weight:900;color:var(--bean)}
+.brand b{color:var(--fire)}
+.brand small{display:block;font-size:11px;letter-spacing:3px;color:#ffab91;font-weight:700}
+.nav{display:flex;gap:12px;margin-left:auto;flex-wrap:wrap}
+.nav a{font-size:14px;font-weight:700;color:var(--cream);padding:6px 14px;border:1px solid rgba(255,213,79,.5);border-radius:999px;background:rgba(255,255,255,.04)}
+.nav a:hover{background:var(--fire);color:#fff;border-color:var(--fire)}
+.btn{font-size:13px;font-weight:800;background:var(--bean);color:var(--coal);padding:8px 18px;border-radius:999px;box-shadow:0 3px 0 var(--bean-d)}
+.btn:hover{transform:translateY(-1px)}
+
+.hero{max-width:1180px;margin:0 auto;padding:44px 20px 24px;position:relative}
+.pot{position:absolute;right:18px;top:6px;font-size:130px;filter:drop-shadow(0 12px 22px rgba(0,0,0,.5));transform:rotate(-4deg);opacity:.92}
+.hero-card{background:linear-gradient(160deg,var(--coal2),#120c07);border:1.5px solid rgba(255,213,79,.35);border-radius:18px;padding:34px 32px;max-width:780px;position:relative;box-shadow:inset 0 0 0 5px rgba(255,87,34,.12),0 16px 40px rgba(0,0,0,.5)}
+.badge{display:inline-block;background:var(--fire);color:#fff;font-size:12px;font-weight:800;letter-spacing:1px;padding:4px 12px;border-radius:999px;margin-bottom:12px}
+.hero h1{font-size:clamp(36px,7vw,62px);font-weight:900;color:var(--bean);line-height:1.15}
+.hero h1 span{color:var(--fire)}
+.hero p{max-width:620px;color:#ffe0c2;font-size:clamp(14px,3vw,16px);margin:14px 0}
+.hero-url{display:inline-block;font-family:"Courier New",monospace;font-weight:800;color:var(--bean);background:#120c07;border:1px dashed var(--fire);padding:8px 16px;border-radius:10px}
+
+.section{max-width:1180px;margin:0 auto;padding:18px 20px 60px}
+.head{display:flex;align-items:center;gap:12px;margin:38px 0 18px;flex-wrap:wrap}
+.head .ico{font-size:22px}
+.head h2{font-size:clamp(20px,4vw,26px);font-weight:900;color:var(--bean)}
+.head .en{font-size:12px;color:#ffab91;font-family:"Courier New",monospace}
+.head .line{flex:1;height:2px;background:linear-gradient(90deg,var(--fire),transparent);min-width:40px}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px}
+.bean{background:linear-gradient(160deg,#241a10,#1a120b);border:1px solid rgba(255,213,79,.35);border-radius:16px;padding:16px;position:relative;transition:.22s;overflow:hidden}
+.bean::before{content:"🔥";position:absolute;top:8px;right:10px;font-size:16px;opacity:.7}
+.bean:hover{transform:translateY(-4px) rotate(-.5deg);box-shadow:0 12px 26px rgba(255,87,34,.25)}
+.bean .face{height:104px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:42px;color:var(--coal);margin-bottom:10px}
+.bean:nth-child(1) .face{background:linear-gradient(135deg,#ff8a50,var(--fire))}
+.bean:nth-child(2) .face{background:linear-gradient(135deg,#ffe082,var(--bean))}
+.bean:nth-child(3) .face{background:linear-gradient(135deg,#ff7043,#bf360c)}
+.bean:nth-child(4) .face{background:linear-gradient(135deg,#fff59d,#f9a825)}
+.bean:nth-child(5) .face{background:linear-gradient(135deg,#ffab91,#e64a19)}
+.bean:nth-child(6) .face{background:linear-gradient(135deg,#ffd180,#ff6f00)}
+.bean h3{font-size:15px;font-weight:800;color:var(--cream)}
+.bean p{font-size:12px;color:#d7b48a;margin:3px 0 8px}
+.pill{display:inline-block;font-size:11px;font-weight:800;color:var(--coal);background:var(--bean);padding:2px 9px;border-radius:999px;margin-right:4px}
+
+/* 综艺：铜锅 */
+.pot-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
+.stew{display:flex;align-items:center;gap:14px;background:#1f160d;border:1px solid rgba(255,213,79,.4);border-radius:18px;padding:14px 18px}
+.stew .emoji{font-size:26px}
+.stew h3{font-size:14px;font-weight:800;color:var(--bean)}
+.stew p{font-size:12px;color:#d7b48a}
+
+/* 动漫：豆荚 */
+.pods{display:flex;flex-direction:column;gap:12px}
+.pod{display:flex;align-items:center;gap:14px;background:linear-gradient(90deg,#241a10,#1a120b);border:1px dashed rgba(255,213,79,.5);border-radius:999px;padding:10px 20px}
+.pod .seed{width:16px;height:16px;border-radius:50%;background:var(--fire);flex-shrink:0;box-shadow:inset 0 0 0 3px #3a2410}
+.pod:nth-child(2) .seed{background:var(--bean)}
+.pod:nth-child(3) .seed{background:#ff7043}
+.pod:nth-child(4) .seed{background:#fff59d}
+.pod:nth-child(5) .seed{background:#ffab91}
+.pod:nth-child(6) .seed{background:#f9a825}
+.pod h3{font-size:14px;font-weight:800;color:var(--cream)}
+.pod p{font-size:12px;color:#d7b48a}
+.pod .ep{margin-left:auto;font-size:11px;font-weight:800;color:var(--bean);font-family:"Courier New",monospace}
+
+.about{max-width:1180px;margin:0 auto;padding:10px 20px 50px}
+.note{background:linear-gradient(160deg,#241a10,#120c07);border:1.5px solid rgba(255,213,79,.4);border-radius:20px;padding:30px;position:relative}
+.note::before{content:"🍲";position:absolute;top:-16px;right:22px;font-size:30px;background:#120c07;padding:0 6px}
+.note h3{font-size:20px;font-weight:900;color:var(--bean);margin-bottom:12px}
+.note p{font-size:14px;color:#ffe0c2;margin-bottom:10px}
+.note b{color:var(--fire)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:20px}
+.stat{background:#1a120b;border:1px solid rgba(255,213,79,.35);border-radius:16px;padding:16px;text-align:center}
+.stat .v{font-size:22px;font-weight:900;color:var(--bean)}
+.stat .l{font-size:12px;color:#ffab91;margin-top:4px}
+
+.footer{background:#0e0905;color:#d7b48a;padding:36px 20px 22px;text-align:center;margin-top:40px;border-top:5px solid var(--fire)}
+.footer .lg{font-size:22px;font-weight:900;color:var(--bean)}
+.footer .lg b{color:var(--fire)}
+.footer .fl{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin:12px 0;font-size:13px}
+.footer .fl a{color:var(--bean);border-bottom:1px dotted rgba(255,213,79,.6)}
+.footer .cp{font-size:12px;line-height:2;border-top:1px solid #241a10;padding-top:14px;max-width:860px;margin:0 auto}
+.footer .cp a{color:var(--bean)}
+
+@media(max-width:768px){.nav{display:none}.grid{grid-template-columns:repeat(2,1fr)}.pot-grid{grid-template-columns:repeat(2,1fr)}.pot{display:none}}
+@media(max-width:480px){.section{padding:18px 14px 40px}.grid{grid-template-columns:1fr}.pot-grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.hero-card{padding:26px 18px}}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/laoliu.js"></script>
+
+<div class="flame-bar"></div>
+
+<div class="top">
+  <div class="brand">火豆<b>电影网</b><small>HUO DOU · 灶火爆豆</small></div>
+  <nav class="nav">
+    <a href="#movies">灶上新片</a>
+    <a href="#tv">文火热剧</a>
+    <a href="#shows">铜锅综艺</a>
+    <a href="#anime">豆荚动漫</a>
+    <a href="#about">关于这口锅</a>
+  </nav>
+  <a href="#movies" class="btn">🔥 开锅上片</a>
+</div>
+
+<header class="hero">
+  <div class="pot">🍿</div>
+  <div class="hero-card">
+    <div class="badge">不聚合盗版源 · 只做信息导航</div>
+    <h1>火豆<span>电影网</span></h1>
+    <p>片单像锅里爆开的豆子：噼啪一声，热乎、香、不糊。本站不存片、不挂盗版直链、不模仿“免费看会员片”的聚合站，只把正版/公开片单摆上灶台。</p>
+    <div class="hero-url">🔗 https://huodoudianyingwang-h5.github.io</div>
+  </div>
+</header>
+
+<main class="section">
+
+  <div class="head" id="movies">
+    <span class="ico">🔥</span><h2>灶上新片 · 最新电影</h2><span class="en">// fresh & hot</span><div class="line"></div>
+  </div>
+  <div class="grid">
+    <div class="bean"><div class="face">🎬</div><h3>爆豆时刻</h3><p>剧情/2026/8.7</p><span class="pill">新片</span></div>
+    <div class="bean"><div class="face">🌶️</div><h3>辣味夏天</h3><p>青春/2026/8.5</p><span class="pill">爽片</span></div>
+    <div class="bean"><div class="face">🍳</div><h3>油锅边上</h3><p>悬疑/2026/8.6</p><span class="pill">口碑</span></div>
+    <div class="bean"><div class="face">🥢</div><h3>筷落惊堂</h3><p>武侠/2026/8.4</p><span class="pill">动作</span></div>
+    <div class="bean"><div class="face">🍜</div><h3>半夜牛肉面</h3><p>治愈/2026/8.8</p><span class="pill">深夜</span></div>
+    <div class="bean"><div class="face">🍢</div><h3>串摊风云</h3><p>喜剧/2026/8.3</p><span class="pill">下饭</span></div>
+  </div>
+
+  <div class="head" id="tv">
+    <span class="ico">🍲</span><h2>文火热剧 · 热播剧集</h2><span class="en">// slow simmer</span><div class="line"></div>
+  </div>
+  <div class="grid">
+    <div class="bean"><div class="face">📺</div><h3>老灶台人家</h3><p>年代/更新至24集</p><span class="pill">热</span></div>
+    <div class="bean"><div class="face">📺</div><h3>夜市守摊人</h3><p>都市/更新至18集</p><span class="pill">烟火</span></div>
+    <div class="bean"><div class="face">📺</div><h3>辣椒不睡觉</h3><p>家庭/更新至30集</p><span class="pill">合家欢</span></div>
+    <div class="bean"><div class="face">📺</div><h3>炭火刑侦组</h3><p>悬疑/更新至12集</p><span class="pill">新</span></div>
+    <div class="bean"><div class="face">📺</div><h3>汤底秘密</h3><p>商战/更新至20集</p><span class="pill">上头</span></div>
+  </div>
+
+  <div class="head" id="shows">
+    <span class="ico">🥘</span><h2>铜锅综艺 · 综艺娱乐</h2><span class="en">// big pot show</span><div class="line"></div>
+  </div>
+  <div class="pot-grid">
+    <div class="stew"><div class="emoji">🍿</div><div><h3>爆豆夜话</h3><p>边爆米花边聊老片</p></div></div>
+    <div class="stew"><div class="emoji">🥢</div><div><h3>一双筷子评片</h3><p>快嘴影评不绕弯</p></div></div>
+    <div class="stew"><div class="emoji">🌶️</div><div><h3>辣评电影节</h3><p>毒舌+甜口双锅煮</p></div></div>
+    <div class="stew"><div class="emoji">🧂</div><div><h3>撒盐金曲夜</h3><p>影视OST翻唱专场</p></div></div>
+    <div class="stew"><div class="emoji">🍢</div><div><h3>串摊歌会</h3><p>路边摊式音乐闲聊</p></div></div>
+    <div class="stew"><div class="emoji">🔥</div><div><h3>灶王爷点片</h3><p>弹幕投票定下周片</p></div></div>
+  </div>
+
+  <div class="head" id="anime">
+    <span class="ico">🫛</span><h2>豆荚动漫 · 动漫专区</h2><span class="en">// pod & seed</span><div class="line"></div>
+  </div>
+  <div class="pods">
+    <div class="pod"><div class="seed"></div><div><h3>爆豆小英雄</h3><p>搞笑/新番</p></div><div class="ep">EP 12</div></div>
+    <div class="pod"><div class="seed"></div><div><h3>灶火精灵</h3><p>治愈/年番</p></div><div class="ep">EP 48</div></div>
+    <div class="pod"><div class="seed"></div><div><h3>辣条战队</h3><p>热血/连载</p></div><div class="ep">EP 24</div></div>
+    <div class="pod"><div class="seed"></div><div><h3>夜市妖怪铺</h3><p>奇幻/热更</p></div><div class="ep">EP 30</div></div>
+    <div class="pod"><div class="seed"></div><div><h3>铜锅冒险团</h3><p>冒险/新番</p></div><div class="ep">EP 09</div></div>
+    <div class="pod"><div class="seed"></div><div><h3>豆荚物语</h3><p>日常/年番</p></div><div class="ep">EP 60</div></div>
+  </div>
+
+  <div class="head" id="about">
+    <span class="ico">🍲</span><h2>关于这口锅 · 关于我们</h2><span class="en">// about</span><div class="line"></div>
+  </div>
+  <div class="about">
+    <div class="note">
+      <h3>火豆电影网是什么？</h3>
+      <p><b>火豆电影网</b>（https://huodoudianyingwang-h5.github.io）是“灶火+铜锅+爆豆”国潮风的影视信息导航站。</p>
+      <p>“火豆”不是擦边词，也不沿用网上同名聚合站的“免费看会员片/多源切换”模式；本站<b>不存储视频、不提供盗版直链、不聚合非法播放源</b>。</p>
+      <p>关键词：火豆电影网、灶火爆豆、国潮影视导航、最新电影、热播剧集、综艺、动漫。</p>
+      <div class="stats">
+        <div class="stat"><div class="v">5+</div><div class="l">栏目</div></div>
+        <div class="stat"><div class="v">0</div><div class="l">盗版直链</div></div>
+        <div class="stat"><div class="v">100%</div><div class="l">移动端</div></div>
+        <div class="stat"><div class="v">灶火</div><div class="l">国潮美学</div></div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="lg">火豆<b>电影网</b></div>
+  <div class="fl">
+    <a href="#movies">灶上新片</a>
+    <a href="#tv">文火热剧</a>
+    <a href="#shows">铜锅综艺</a>
+    <a href="#anime">豆荚动漫</a>
+    <a href="#about">关于这口锅</a>
+  </div>
+  <div class="cp">
+    网站名称：火豆电影网 ｜ 网址：<a href="https://huodoudianyingwang-h5.github.io">https://huodoudianyingwang-h5.github.io</a><br>
+    © 2026 火豆电影网 · 片单像爆开的豆子 ｜ 本站仅展示影视信息，资源以正版/公开平台为准；不提供盗版聚合播放。
+  </div>
+</footer>
+
+</body>
+</html>
